@@ -1,4 +1,4 @@
-package com.casetext.fnv;
+package com.casetext.hashes.fnv;
 
 import java.math.BigInteger;
 
