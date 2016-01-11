@@ -10,8 +10,15 @@ This project contains 2 items:
 
 This project is built with gradle.  It uses gradle's [wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) functionality to guarantee that all users are building with the same version of the build tools without having to jump through hoops to install it.  To build, type `./gradlew build`; to run the tests type `./gradlew test`.
 
-To use this project as a dependency in a gradle project, you should add the following line to your dependencies section:
+To use this project as a dependency in a gradle project:
 
-`compile 'com.github.casetext:fnv-text-profile-signature:+'`
+1. Add [jitpack](https://jitpack.io/) as a maven repo:
+```groovy
+   repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+   }
+```
+2. Add `compile 'com.github.casetext:fnv-text-profile-signature:+'` to your dependencies block.
 
 and it will be loaded in as any other maven dependency.
