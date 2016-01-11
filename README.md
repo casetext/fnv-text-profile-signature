@@ -12,13 +12,13 @@ This project is built with gradle.  It uses gradle's [wrapper](https://docs.grad
 
 To use this project as a dependency in a gradle project:
 
-1. Add [jitpack](https://jitpack.io/) as a maven repo:
+* Add [jitpack](https://jitpack.io/) as a maven repo:
 ```groovy
    repositories {
         mavenCentral()
         maven { url "https://jitpack.io" }
    }
 ```
-2. Add `compile 'com.github.casetext:fnv-text-profile-signature:+'` to your dependencies block.
+* Add `compile 'com.github.casetext:fnv-text-profile-signature:+'` to your dependencies block.
 
 and it will be loaded in as any other maven dependency.
