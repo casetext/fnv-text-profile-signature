@@ -1,3 +1,25 @@
+/**
+ * Copyright 2015 Casetext, Inc.
+ * 
+ * Derived from TextProfileSignature.java, as distributed with Apache
+ * SOLR, which was licensed to the Apache Software Foundation (ASF) under 
+ * one or more contributor license agreements.  See the NOTICE file 
+ * located at Apache Solr's github for information regarding copyright
+ * ownership: https://github.com/apache/solr/blob/branch-1.1/NOTICE.txt
+ * 
+ * Casetext licenses this file to You under the Apache License, Version 2.0
+ * (the "License"); you may not use this file except in compliance with
+ * the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.casetext.hashes.textprofile;
 
 import com.casetext.hashes.fnv.FNV;
