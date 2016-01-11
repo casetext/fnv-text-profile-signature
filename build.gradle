@@ -1,0 +1,17 @@
+apply plugin: 'java'
+group = 'com.casetext'
+version = '1.0'
+
+repositories {
+  mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+  group = 'Build Setup'
+  description = 'Generate the gradlew wrapper used for build tool distribution'
+  gradleVersion = '2.8'
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+}
