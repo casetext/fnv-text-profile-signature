@@ -1,6 +1,6 @@
 package com.casetext.hashes.textprofile;
 
-import com.casetext.fnv.FNV;
+import com.casetext.hashes.fnv.FNV;
 
 import java.util.*;
 
