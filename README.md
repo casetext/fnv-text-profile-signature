@@ -1,6 +1,8 @@
 # fnv-text-profile-signature
 This project contains 2 items:
 
+[![](https://jitpack.io/v/casetext/fnv-text-profile-signature.svg)](https://jitpack.io/#casetext/fnv-text-profile-signature)
+
 1. A 128-bit FNV-1a implementation (which really ought to exist in the java standard lib, but I digress...)
 2. An adaptation of the TextProfileSignature class used in [solr](http://lucene.apache.org/solr/), adapted from [Apache Nutch](http://nutch.apache.org/) that does 2 things differently:
     * Uses a LinkedHashMap in place of a regular HashMap, so that the sorting order is predictable
