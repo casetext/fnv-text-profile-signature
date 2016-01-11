@@ -1,4 +1,4 @@
-package com.casetext.textprofile;
+package com.casetext.hashes.textprofile;
 
 import static org.junit.Assert.*;
 
