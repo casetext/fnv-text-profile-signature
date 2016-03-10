@@ -27,7 +27,6 @@ public class FNV {
         for (byte b : bytes) {
             digest = digest.xor(BigInteger.valueOf((long) b));
             digest = digest.multiply(params.prime);
-            digest = digest.mod(params.m);
         }
         byte[] result = digest.toByteArray();
         while (result.length > bits / 8) {
