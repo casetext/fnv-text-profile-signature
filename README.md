@@ -2,6 +2,7 @@
 This project contains 2 items:
 
 [![](https://jitpack.io/v/casetext/fnv-text-profile-signature.svg)](https://jitpack.io/#casetext/fnv-text-profile-signature)
+[![Build Status](https://travis-ci.org/casetext/fnv-text-profile-signature.svg?branch=master)](https://travis-ci.org/casetext/fnv-text-profile-signature)
 
 1. A 128-bit FNV-1a implementation (which really ought to exist in the java standard lib, but I digress...)
 2. An adaptation of the TextProfileSignature class used in [solr](http://lucene.apache.org/solr/), adapted from [Apache Nutch](http://nutch.apache.org/) that does 2 things differently:
