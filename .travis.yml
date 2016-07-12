@@ -1,5 +1,4 @@
-sudo: required
-dist: trusty
+sudo: false
 language: java
 env:
   global:
@@ -7,11 +6,5 @@ env:
     - secure: "b1v74SOUrdIn/KkPFJ+2UZ8u9qoJxahwEA7yjUWT+XIYQIipzXKUfJvuTPtmKGdhxnaqY5zI7C9rzE775pKBNG4IGMmRwRvmoxatc7UjunQ7o1jre8MnitPT3aMIZU5flXb/gJ3if5RHoVpAeDtT1FUMgt1pZtVjh0ldcrh9oRc="
 jdk:
   - oraclejdk8
-script: ./gradlew build --info
-before_cache:
-  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
-cache:
-  directories:
-    - $HOME/.gradle/caches/
-    - $HOME/.gradle/wrapper/
+script: ./gradlew check --info
 after_success: "./gradlew publish"
