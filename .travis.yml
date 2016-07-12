@@ -3,11 +3,9 @@ language: java
 env:
   global:
     - AWS_ACCESS_KEY_ID=AKIAJIZZTZIXJIFQQ2WA
-    - secure: "b1v74SOUrdIn/KkPFJ+2UZ8u9qoJxahwEA7yjUWT+XIYQIipzXKUfJvuTPtmKGdhxnaqY5zI7C9rzE775pKBNG4IGMmRwRvmoxatc7UjunQ7o1jre8MnitPT3aMIZU5flXb/gJ3if5RHoVpAeDtT1FUMgt1pZtVjh0ldcrh9oRc="
+    - secure: "m7Uiuhvi0oofJmKrnDK3pxW5YeRVV1IzcoYIciQbA+o7GJ4KuLQQA1kHP9jtFGKgsarx4Lp8PbwwHClkFdGt0iRdWkiiT+RNrZe39sh5j6x2XeCWrFkLkFWp9QYInu62HZ9AO1ZJPbBtnpKiXUqehvpVgnhjJxHjD3upLSXu8Qjy6Olj0omleWsgxw42SvZisJ7KDPR1+qquvXi9MNXYyPH+9777ziJVf+5KOV1RYhvesxOZWGuGPeETLLrFKUr/hWwyiOfo+C0a8VpZpnE25XP7q3FrDaFF4VIZZt9mpvNA6Qj6jkxnVakYuhlvLPa5cx1o07yMksEjK7nEAU0tnD5U78b2A7WaBMr0KNIjlA6ax7q86D5I6MpuejYqUp4aoP+tP6E4Vgxj9XsVlTaY1eK/PSy5KS9hjBZpv3G2U1oipyVV0x0+3KSg6v3Xk2vAHM873T/vG9tTYOyOG1/Lvu5KymmCZ7yqfyTZXnvuhC10mKWbwZZqJOBAf2YvxN2E0/A4EhvvFN028L5/lkyaWNlUvbDXk2IziGaQnNtyiGaknbOQCKr6GVn7OqBRKY27gaSH/i+17yH8hGxPXtBRCZQ4EezTNYXjSSiLTB0q0ffuKFsddfCJvBEyqRpw3co6DUZAp5sQ6K9Tu6LmO37tbLxs7zZIR3MJh2JNGBT+OSg="
 jdk:
   - oraclejdk8
 script: ./gradlew check --info
 after_success:
-  branches:
-    only:
-      - "./gradlew publish"
+  if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./gradlew publish; fi
